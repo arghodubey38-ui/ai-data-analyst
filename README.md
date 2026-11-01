@@ -19,13 +19,13 @@
 
 ---
 
-## ✨ Overview
+##  Overview
 
 **AI Data Analyst** lets anyone analyze a CSV file without writing code or formulas. Upload a dataset, type a question such as *"Show the monthly revenue trend"*, and the app returns a result table, an interactive chart and a short plain-English summary.
 
 > **Design principle:** the AI *plans*, Pandas *calculates*. The language model never writes or runs code, so every number comes from trusted, tested functions.
 
-## 🚀 Features
+##  Features
 
 | Feature | Description |
 |---|---|
@@ -37,7 +37,7 @@
 | 🧾 **Plain-English summary** | The AI explains the computed result in 2–3 sentences |
 | 🔒 **Safe by design** | No arbitrary code execution; columns and operations are validated |
 
-## 🧠 How It Works
+##  How It Works
 
 ```mermaid
 flowchart LR
@@ -57,7 +57,7 @@ flowchart LR
 3. **Compute:** Pandas runs the matching function in `analysis.py`.
 4. **Present:** Streamlit shows the table and chart, and the LLM summarizes the computed result.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Tool |
 |---|---|
@@ -67,7 +67,7 @@ flowchart LR
 | LLM | Groq (open-source Llama / GPT-OSS models) |
 | Hosting | Streamlit Community Cloud |
 
-## 💡 Example Questions
+##  Example Questions
 
 - *What is the total revenue by region?*
 - *Show the monthly revenue trend*
@@ -76,7 +76,7 @@ flowchart LR
 - *Give me summary statistics for revenue*
 - *How many rows are there per product?*
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 ai-data-analyst/
@@ -128,20 +128,20 @@ Open **http://localhost:8501** in your browser.
    ```
 5. Click **Deploy**.
 
-## 🧪 Testing
+##  Testing
 
 ```bash
 pip install pytest
 python -m pytest -q
 ```
 
-## 🔧 Extending the App
+##  Extending the App
 
 1. Add a new function in `analysis.py`.
 2. Register it in `OPERATIONS` and `run_plan`.
 3. Describe it in the prompt in `planner.py`.
 
-## 🔐 Privacy & Security
+##  Privacy & Security
 
 - Only column names, a few sample rows and the computed result are sent to the LLM.
 - The LLM cannot execute code; it can only choose from a fixed list of operations.
@@ -162,8 +162,8 @@ Released under the [MIT License](LICENSE).
 
 <div align="center">
 
-**⭐ If you find this project useful, please give it a star!**
+** If you find this project useful, please give it a star!**
 
-[🚀 Try the Live Demo](https://ai-data-analyst-5fqwczcbn69laqysefhymr.streamlit.app/)
+[ Try the Live Demo](https://ai-data-analyst-5fqwczcbn69laqysefhymr.streamlit.app/)
 
 </div>
