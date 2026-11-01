@@ -1,10 +1,10 @@
 <div align="center">
 
-# 📊 AI Data Analyst
+#  AI Data Analyst
 
 ### Ask questions about your data in plain English. Get tables, charts and insights instantly.
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Open_App-FF4B4B?style=for-the-badge)](https://ai-data-analyst-5fqwczcbn69laqysefhymr.streamlit.app/)
+[![Live Demo](https://img.shields.io/badge/_Live_Demo-Open_App-FF4B4B?style=for-the-badge)](https://ai-data-analyst-5fqwczcbn69laqysefhymr.streamlit.app/)
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
@@ -29,24 +29,24 @@
 
 | Feature | Description |
 |---|---|
-| 💬 **Natural-language questions** | Ask in everyday English, no SQL or Excel needed |
-| 📂 **CSV upload** | Works with your own data, or load the built-in sample |
-| 📈 **Interactive charts** | Plotly bar, line, box and histogram charts with hover and zoom |
-| 🔍 **Anomaly detection** | Flags outliers using z-scores |
-| 📉 **Trend analysis** | Monthly, weekly, quarterly or yearly trends with a trend line |
-| 🧾 **Plain-English summary** | The AI explains the computed result in 2–3 sentences |
-| 🔒 **Safe by design** | No arbitrary code execution; columns and operations are validated |
+|  **Natural-language questions** | Ask in everyday English, no SQL or Excel needed |
+|  **CSV upload** | Works with your own data, or load the built-in sample |
+|  **Interactive charts** | Plotly bar, line, box and histogram charts with hover and zoom |
+|  **Anomaly detection** | Flags outliers using z-scores |
+|  **Trend analysis** | Monthly, weekly, quarterly or yearly trends with a trend line |
+|  **Plain-English summary** | The AI explains the computed result in 2–3 sentences |
+|  **Safe by design** | No arbitrary code execution; columns and operations are validated |
 
 ##  How It Works
 
 ```mermaid
 flowchart LR
-    A[📂 Upload CSV] --> B[💬 Ask a question]
-    B --> C[🤖 Groq LLM<br/>returns a JSON plan]
-    C --> D[✅ Validate<br/>columns & operation]
-    D --> E[🐼 Pandas<br/>runs trusted function]
-    E --> F[📊 Table + Plotly chart]
-    E --> G[📝 AI summary]
+    A[ Upload CSV] --> B[ Ask a question]
+    B --> C[ Groq LLM<br/>returns a JSON plan]
+    C --> D[ Validate<br/>columns & operation]
+    D --> E[ Pandas<br/>runs trusted function]
+    E --> F[ Table + Plotly chart]
+    E --> G[ AI summary]
 ```
 
 1. **Plan:** the LLM receives only the column names and a few sample rows, and replies with a JSON plan, for example:
@@ -147,14 +147,14 @@ python -m pytest -q
 - The LLM cannot execute code; it can only choose from a fixed list of operations.
 - API keys are stored in Streamlit Secrets and are never committed to the repository.
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [ ] Filters and multi-column grouping
 - [ ] Download results as CSV
 - [ ] Excel (`.xlsx`) file support
 - [ ] Chat history and follow-up questions
 
-## 📄 License
+##  License
 
 Released under the [MIT License](LICENSE).
 
